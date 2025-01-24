@@ -19,7 +19,7 @@
 
 4. Go inside **classProjects** and create a folder `ecom(mainfolder)`
 
-5. Create virtual environment `myvenv`
+5. Go inside `ecom(mainfolder)` folder and Create virtual environment `myvenv`
 
     ```
     python -m venv virtualEnvKaNaam (say "myvenv")
@@ -37,7 +37,7 @@
     pip install django
     ```
 
-8. Create Django project `myproject` and open in vs code
+8. Create Django project `myproject` and open **myproject** in vs code
 
     ```
     django-admin startproject myproject
