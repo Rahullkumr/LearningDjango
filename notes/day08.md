@@ -2,3 +2,5 @@
 
 - practice
     - virtual env and installation of django
+
+- practice and practice a lot
