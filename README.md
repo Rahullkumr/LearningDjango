@@ -1,4 +1,4 @@
-# LearningDjango
+# Learning Django
 
 Learning Django from Rajat Naroji sir
 
