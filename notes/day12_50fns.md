@@ -1,10 +1,18 @@
 # Day12: 30-Jan-2025
 
 - learnt about types of errors 
-    - `Page not found` 
-    - `Site can't be reached`
+
+    - `Page not found` url is not correct
+
+    - `Site can't be reached` server not running
+
     - `Attribute error`
+        - returning **string** from a function in views instead of returning httpResponse
+
     - `Value error`
+        - returning **None** from the function instead of returning httpResponse
+
+
 
 ## Today's assignment
 
