@@ -4,6 +4,13 @@ Learning Django from Rajat Naroji sir
 
 ![](./Django%205.png)
 
+## MVC architecture 
+![](./MVCbysir.jpg)
+
+
+## MVT architecture (used by Django)
+![](./MVCbysir.jpg)
+
 ## Ideal Folder structure for a Django project
 
 ```
