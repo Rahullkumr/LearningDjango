@@ -1,5 +1,5 @@
 from django.urls import path
-from app5 import views
+from app7 import views
 
 urlpatterns = [
     path('views1', views.homepage),
