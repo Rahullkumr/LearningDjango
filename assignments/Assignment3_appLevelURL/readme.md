@@ -1,6 +1,6 @@
 ## Assignment 3 (App level url)
 
-- Two projects
-    - create 5 apps each
-        - each app 5 views
+- Five projects
+    - create 10 apps each
+        - each app 10 views
         - app level url file 
