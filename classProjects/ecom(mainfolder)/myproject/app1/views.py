@@ -4,9 +4,14 @@ from django.http import HttpResponse
 
 
 def home(request):
-    print('hello world')
-    return HttpResponse('homepage')
+    # print('hello world')
+    # return HttpResponse('homepage')
+
+    # today learnt about templates, so we will use below code
+    return render(request, 'home.html')
 
 
 def about(request):
-    return HttpResponse('about page')
+    # return HttpResponse('about page')
+
+    return render(request, 'about.html')
