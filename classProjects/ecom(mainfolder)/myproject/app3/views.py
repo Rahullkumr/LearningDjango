@@ -4,21 +4,16 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def views1(request):
-    return HttpResponse('<h1>This is views1 from app3</h1>')
+def red(request):
+    # return HttpResponse('<h1>This is red from app3</h1>')
+    return render(request, 'red.html')
 
 
-def views2(request):
-    return HttpResponse('<h1>This is views2 from app3</h1>')
+def green(request):
+    # return HttpResponse('<h1>This is green from app3</h1>')
+    return render(request, 'green.html')
 
 
-def views3(request):
-    return HttpResponse('<h1>This is views3 from app3</h1>')
-
-
-def views4(request):
-    return HttpResponse('<h1>This is views4 from app3</h1>')
-
-
-def views5(request):
-    return HttpResponse('<h1>This is views5 from app3</h1>')
+def blue(request):
+    # return HttpResponse('<h1>This is blue from app3</h1>')
+    return render(request, 'blue.html')
