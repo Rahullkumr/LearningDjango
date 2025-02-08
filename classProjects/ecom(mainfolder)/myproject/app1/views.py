@@ -8,10 +8,10 @@ def home(request):
     # return HttpResponse('homepage')
 
     # today learnt about templates, so we will use below code
-    return render(request, 'home.html')
+    return render(request, 'all_temp1/home.html')
 
 
 def about(request):
     # return HttpResponse('about page')
 
-    return render(request, 'about.html')
+    return render(request, 'all_temp1/about.html')
