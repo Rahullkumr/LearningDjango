@@ -6,14 +6,14 @@ from django.http import HttpResponse
 
 def Sachin(request):
     # return HttpResponse('This is Sachin from app4')
-    return render(request, 'sachin.html')
+    return render(request, 'all_temp4/sachin.html')
 
 
 def Dhoni(request):
     # return HttpResponse('This is Dhoni from app4')
-    return render(request, 'dhoni.html')
+    return render(request, 'all_temp4/dhoni.html')
 
 
 def Virat(request):
     # return HttpResponse('This is Virat from app4')
-    return render(request, 'virat.html')
+    return render(request, 'all_temp4/virat.html')
