@@ -71,3 +71,9 @@
 
 - Create 2 projects 10 apps each with 5 views in each app 
 - Implement template Inheritance (common boilerplate code)
+
+## Problem 
+
+```diff
+- app2's templates are extending app1's main.html file
+```
