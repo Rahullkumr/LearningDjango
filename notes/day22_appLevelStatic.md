@@ -4,7 +4,7 @@
 
 - load static dtl tag is used to load external css file
 
-    ```
+    ```django html
     <!-- write this in main.html -->
 
     {% load static %} ===> used to load static files
@@ -23,3 +23,7 @@
         - path of template
 
     - used to render templates and also to create response
+
+## Note
+
+> see notes for better understanding
