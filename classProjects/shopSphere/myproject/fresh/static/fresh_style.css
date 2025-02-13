@@ -8,7 +8,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(91, 91, 142);
+    background-color: rgb(48, 102, 47);
     color: white;
     .logo{
         font-size: 50px;
@@ -28,13 +28,21 @@ nav{
 }
 .logo, .links{
     padding: 5px;
-    margin: 5px;
-    
+    margin: 5px;   
 }
+
 .body{
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+button{
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: rgb(55, 85, 55);
+    padding: 5px;
+    font-size: 30px;
 }
