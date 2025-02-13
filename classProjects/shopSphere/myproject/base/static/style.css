@@ -11,7 +11,7 @@ nav{
     background-color: rgb(91, 91, 142);
     color: white;
     .logo{
-        font-size: 35px;
+        font-size: 50px;
         /* border: 2px solid red; */
     }
     .links{
@@ -30,4 +30,11 @@ nav{
     padding: 5px;
     margin: 5px;
     
+}
+.body{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

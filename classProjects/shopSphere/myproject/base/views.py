@@ -5,3 +5,7 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, 'temp_base/home.html')
+
+
+def about(request):
+    return render(request, 'temp_base/about.html')
