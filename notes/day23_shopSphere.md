@@ -1,5 +1,4 @@
-# Day23: 11-Feb-2025
-
+# Day23: 12-Feb-2025
 
 > new project in classProject i.e `ShopSphere`
 
