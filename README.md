@@ -9,7 +9,7 @@ Learning Django from Rajat Naroji sir
 
 
 ## MVT architecture (used by Django)
-![](./MVCbysir.jpg)
+![](./MVTbysir.png)
 
 ## Ideal Folder structure for a Django project
 
