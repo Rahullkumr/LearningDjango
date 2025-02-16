@@ -2,6 +2,19 @@
 
 {% block content %}
 <div class="body">
-    <h1>Television page</h1>    
+    <h1 style='margin-bottom: 50px'>Television Collection</h1> 
+    
+    <div class="container">
+        {% for tv in tv_data %}
+            <div class="card">
+                <h2 class="centerme">{{tv.company}}</h2> <br>
+                <h3>Model no: {{tv.model}}</h3> <br>
+                <h3>Size: {{tv.size}}</h3> <br>
+                <h3>Price: {{tv.price}}</h3> <br>
+                <button>add to cart</button>
+            </div>
+        {% endfor %}
+    </div>
+
 </div>
 {% endblock content %}
