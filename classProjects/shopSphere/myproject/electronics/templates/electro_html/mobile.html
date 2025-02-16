@@ -2,6 +2,19 @@
 
 {% block content %}
 <div class="body">
-    <h1>Mobile page</h1>    
+    <h1 style='margin-bottom: 50px'>Mobile Collection</h1> 
+    
+    <div class="container">
+        {% for mobile in mobile_data %}
+            <div class="card">
+                <h2 class="centerme">{{mobile.company}}</h2> <br>
+                <h3>Model no: {{mobile.model}}</h3> <br>
+                <h3>Color: {{mobile.color}}</h3> <br>
+                <h3>Price: {{mobile.price}}</h3> <br>
+                <button>add to cart</button>
+            </div>
+        {% endfor %}
+    </div>
+
 </div>
 {% endblock content %}

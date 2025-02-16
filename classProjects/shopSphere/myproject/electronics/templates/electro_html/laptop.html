@@ -2,6 +2,18 @@
 
 {% block content %}
 <div class="body">
-    <h1>Laptop page</h1>    
+    <h1 style='margin-bottom: 50px'>Laptop Collection</h1> 
+
+    <div class="container">
+        {% for laptop in laptop_data %}
+            <div class="card">
+                <h2 class="centerme">{{laptop.company}}</h2> <br>
+                <h3>Model no: {{laptop.model}}</h3> <br>
+                <h3>Storage: {{laptop.storage}}</h3> <br>
+                <h3>Price: {{laptop.price}}</h3> <br>
+                <button>add to cart</button>
+            </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock content %}
