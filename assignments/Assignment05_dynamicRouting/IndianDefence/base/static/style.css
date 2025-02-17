@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    border-bottom: 1px solid black;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(        
+        to right, 
+        #FF671F 15%,
+        white 40%, white 50%,
+        #046A38 70%, #046A38 90%
+    );
+    .logo{
+        font-size: 50px;
+        /* border: 1px solid red; */
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .ashok-chakra{
+        /* border: 1px solid red; */
+        margin-left: 150px;
+        height: 100px;
+        width: 100px;
+        background-image: url(Ashoka_Chakra.svg);
+        background-position: center;
+        background-size: contain;
+    }
+    .links{
+        /* border: 2px solid red; */
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        a{
+            font-size: 30px;
+            text-decoration:none;
+            color: white;
+        }
+    }
+    
+}
+.logo, .links{
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+.container{
+    overflow: hidden;
+    height: 86vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .div1{
+        /* background-color: red; */
+        background-image: url(./id1.jpg);
+    }
+    .div2{
+        /* background-color: green; */
+        background-image: url(./id2.jpg);
+    }
+    .div3{
+        /* background-color: blue; */
+        background-image: url(./id3.jpg);
+    }
+    .div4{
+        /* background-color: orange; */
+        background-image: url(./id4.jpg);
+    }
+    .div1, .div2, .div3, .div4{
+        background-repeat: no-repeat;
+        background-size: cover ;
+    }
+
+}

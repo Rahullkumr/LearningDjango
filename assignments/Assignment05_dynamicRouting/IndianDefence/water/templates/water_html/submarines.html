@@ -1,0 +1,27 @@
+{% extends 'water_main.html' %}
+
+{% block content %}
+    <h1 class='category'>Submarine Collection</h1>
+
+    <div class="container">
+        {% for i in submarines %}
+            <div class="card">
+                <h2 class="centerme">{{i.name}}</h2> <hr>
+
+                <h3>Origin: {{i.origin}}</h3>
+                <h3>Displacement: {{i.displacement}}</h3>
+                <h3>Length: {{i.length}}</h3>
+                <h3>Depth: {{i.depth}}</h3>
+                <h3>Speed: {{i.speed}}</h3>
+                <h3>Type: {{i.type}}</h3>
+
+                <h3>Armament: </h3> 
+                {% for arms in i.armament %}
+                    <li>{{arms}}</li>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
+
+{% endblock content %}
