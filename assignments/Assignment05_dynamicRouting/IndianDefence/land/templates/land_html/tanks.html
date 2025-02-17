@@ -1,0 +1,22 @@
+{% extends 'land_main.html' %}
+
+{% block content %}
+    <h1 class='category'>Tank collection</h1>
+
+    <div class="container">
+        {% for i in tanks %}
+            <div class="card">
+                <h2 class="centerme">{{i.name}}</h2> <hr>
+
+                <h3>Origin: {{i.origin}}</h3>
+                <h3>Type: {{i.type}}</h3>
+                <h3>Weight: {{i.weight}}</h3>
+                <h3>Engine Power: {{i.engine_power}}</h3>
+                <h3>Speed: {{i.speed}}</h3>
+                <h3>Range: {{i.range}}</h3>
+                <h3>Main armament: </h3>
+                <li>{{i.main_armament}}</li>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}

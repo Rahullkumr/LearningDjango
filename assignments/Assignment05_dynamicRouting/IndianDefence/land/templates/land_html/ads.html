@@ -1,0 +1,24 @@
+{% extends 'land_main.html' %}
+
+{% block content %}
+    <h1 class='category'>Air Defence Systems</h1>
+
+    <div class="container">
+        {% for i in air_defence_sys %}
+            <div class="card">
+                <h2 class="centerme">{{i.name}}</h2> <hr>
+
+                <h3>Origin: {{i.origin}}</h3>
+                <h3>Type: {{i.type}}</h3>
+                <h3>Range: {{i.range}}</h3>
+                <h3>Altitude Range: {{i.altitude_range}}</h3>
+                <h3>MIssile Type: {{i.missile_type}}</h3>
+
+                <h3>Role: </h3> 
+                {% for r in i.role %}
+                    <li>{{r}}</li>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
