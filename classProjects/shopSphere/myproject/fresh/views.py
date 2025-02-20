@@ -30,13 +30,6 @@ def cucumber(request):
     return render(request, 'fresh_html/cucumber.html', context)
 
 
-def fresh_about(request):
-    context = {
-        'page_name': 'About',
-    }
-    return render(request, 'fresh_html/fresh_about.html', context)
-
-
 def tomato(request):
     tomato_data = {
         'price': 'RS 30',
@@ -45,7 +38,3 @@ def tomato(request):
     }
     context = {'page_name': 'Tomato', 'tomato_data': tomato_data}
     return render(request, 'fresh_html/tomato.html', context)
-
-
-def fresh_cart(request):
-    return render(request, 'fresh_html/fresh_cart.html')

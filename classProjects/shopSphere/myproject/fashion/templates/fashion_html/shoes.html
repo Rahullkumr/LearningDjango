@@ -1,0 +1,19 @@
+{% extends 'fashion_main.html' %}
+
+{% block content %}
+
+<h1 style='margin: 50px; text-align: center;'>Shoe Collection</h1> 
+    
+<div class="container">
+    {% for shoe in shoes_data %}
+        <div class="card">
+            <h2 class="centerme">{{shoe.brand}}</h2> <br>
+            <h3>Model: {{shoe.model}}</h3> <br>
+            <h3>Color: {{shoe.color}}</h3> <br>
+            <h3>Price: {{shoe.price}}</h3> <br>
+            <button>add to cart</button>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
