@@ -4,16 +4,30 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def mobile(request):
+def home(request):
     # return HttpResponse('This page is about mobiles')
-    return render(request, 'all_temp2/mobile.html')
+    return render(request, 'all_temp2/app2_home.html')
 
 
-def charger(request):
+def rectangle(request):
+    # return HttpResponse('This page is about mobiles')
+    context = {
+        'rect_data': 'Rectangle view'
+    }
+    return render(request, 'all_temp2/rectangle.html', context)
+
+
+def circle(request):
     # return HttpResponse('This page is about chargers')
-    return render(request, 'all_temp2/charger.html')
+    context = {
+        'circle_data': 'Circle view'
+    }
+    return render(request, 'all_temp2/circle.html', context)
 
 
-def headphone(request):
+def square(request):
     # return HttpResponse('This page is about headphone')
-    return render(request, 'all_temp2/headphone.html')
+    context = {
+        'square_data': 'Square view'
+    }
+    return render(request, 'all_temp2/square.html', context)
