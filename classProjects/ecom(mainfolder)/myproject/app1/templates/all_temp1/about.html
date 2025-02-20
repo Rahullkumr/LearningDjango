@@ -1,5 +1,16 @@
 {% extends 'main.html' %}
 
 {% block content%}
-    <h2>this is about page</h2>
+    <h1>this is about page</h1><br>
+
+    <h2>Following data is coming from views</h2>
+    <p>countries: {{countries_data}}</p><br>
+
+    <h2>Using loop to display data recieved from views</h2>
+    {% for i in countries_data %}
+        <p>country name = {{i.name}}</p>
+        <p>capital = {{i.capital}}</p>
+    {% endfor %}
+
+
 {% endblock content%}

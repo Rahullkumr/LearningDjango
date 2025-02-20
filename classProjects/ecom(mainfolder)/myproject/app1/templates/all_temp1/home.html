@@ -1,5 +1,15 @@
 {% extends 'main.html' %}
 
 {% block content%}
-    <h2>this is homepage</h2>
+    <!-- <h2>this is homepage</h2> -->
+
+    
+     <!-- <h2>{{home_data}}</h2> -->
+
+     {% for i in home_data  %}
+        <h2>name = {{i.name}}</h2>
+        <h2>rollno = {{i.rollno}}</h2>
+        <h2>current city = {{i.current_city}}</h2>
+        <h2>state = {{i.state}}</h2>
+     {% endfor %}
 {% endblock content%}

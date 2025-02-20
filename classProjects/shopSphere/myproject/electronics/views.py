@@ -10,7 +10,6 @@ def electro_home(request):
 def mobile(request):
     data = [
         {
-            # 'img_link': 'https://b2c-contenthub.com/wp-content/uploads/2024/10/Galaxy-A16-5G-2.webp?w=1200',
             'company': 'Samsung',
             'model': 'Galaxy A17',
             'price': 25000,

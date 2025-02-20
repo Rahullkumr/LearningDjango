@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgba(62, 53, 52, 0.825);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+    .logo{
+        font-size: 25px;
+    }
+    .links{
+        font-size: 20px;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

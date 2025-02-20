@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+
+{% block content%}
+    <h1 style="text-align: center;">Data coming from views</h1>
+     {% for i in mobile_data  %}
+        <div class='hoverme' style="border: 1px solid darkgoldenrod;margin: 20px;padding: 20px;text-align: center;">
+            {{i}}
+        </div>
+     {% endfor %}
+{% endblock content%}

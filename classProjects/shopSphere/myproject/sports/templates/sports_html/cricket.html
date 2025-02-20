@@ -1,0 +1,17 @@
+{% extends 'sports_main.html' %}
+
+{% block content%}
+<h1 style='margin: 50px; text-align: center;'>Cricket Collection</h1> 
+    
+<div class="container">
+    {% for i in cricket_data %}
+        <div class="card">
+            <h2 class="centerme">{{i.brand}}</h2> <br>
+            <h3>Type: {{i.type}}</h3> <br>
+            <h3>Color: {{i.color}}</h3> <br>
+            <h3>Price: {{i.price}}</h3> <br>
+            <button>add to cart</button>
+        </div>
+    {% endfor %}
+</div>
+{% endblock content%}
