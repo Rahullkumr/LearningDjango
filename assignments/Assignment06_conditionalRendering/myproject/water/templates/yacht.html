@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="body">
+    {% for i in yachts %}
+    <div class="container">
+        <h1 style="margin: 1rem; text-align: center;">{{i.name}}</h1> 
+        <div class="details">
+            <img style="margin: 5px;" src={{i.img_url}} alt="fish image" height="200px" width="auto">
+            <p style="margin: 5px; padding: 30px; font-size: 20px;" >{{i.desc}}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock%}

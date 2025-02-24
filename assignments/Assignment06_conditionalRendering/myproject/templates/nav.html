@@ -1,0 +1,55 @@
+{% if air_nav %}
+
+    <nav style='background-color: chocolate;'>
+        <div class="logo">
+            <a href="{% url '' %}">Air Logo</a>
+        </div>
+        <div class="links">
+            <a href="{% url 'air_home' %}">Home</a>
+            <a href="{% url 'birds' %}">Birds</a>
+            <a href="{% url 'helicopter' %}">Helicopter</a>
+            <a href="{% url 'aeroplane' %}">Aeroplane</a>
+        </div>
+    </nav>
+
+{% elif water_nav %}
+
+    <nav style='background-color: rgb(53, 53, 91);'>
+        <div class="logo">
+            <a href="{% url '' %}">Water Logo</a>
+        </div>
+        <div class="links">
+            <a href="{% url 'water_home' %}">Home</a>
+            <a href="{% url 'fish' %}">Fish</a>
+            <a href="{% url 'ship' %}">Ship</a>
+            <a href="{% url 'yacht' %}">Yacht</a>
+        </div>
+    </nav> 
+
+{% elif land_nav %}
+
+    <nav style='background-color: rgb(80, 49, 2);'>
+        <div class="logo">
+            <a href="{% url '' %}">Land Logo</a>
+        </div>
+        <div class="links">
+            <a href="{% url 'land_home' %}">Home</a>
+            <a href="{% url 'tiger' %}">Tiger</a>
+            <a href="{% url 'bus' %}">Bus</a>
+            <a href="{% url 'train' %}">Train</a>
+        </div>
+    </nav> 
+
+{% else %}
+    <nav>
+        <div class="logo">
+            <a href="{% url '' %}">Base Logo here</a>
+        </div>
+        <div class="links">
+            <a href="{% url 'air_home' %}">Air</a>
+            <a href="{% url 'water_home' %}">Water</a>
+            <a href="{% url 'land_home' %}">Land</a>
+        </div>
+    </nav>
+
+{% endif %}
