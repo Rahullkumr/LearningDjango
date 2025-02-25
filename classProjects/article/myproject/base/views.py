@@ -60,11 +60,11 @@ def about(request):
     return render(request, 'about.html')
 
 
-def read(request, primary_key):
+def read(request, recieved_button_ka_id):
     # print(type(int(primary_key)))
 
     for i in articles_data:
-        if i['id'] == primary_key:
+        if i['id'] == recieved_button_ka_id:
             context = {'primary_key': i}
 
     return render(request, 'read.html', context)
