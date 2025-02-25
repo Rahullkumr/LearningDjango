@@ -22,7 +22,7 @@
     # <int:primary_key> is the path converter
     ```
 
-3. argument (in ) 
+3. argument
 
     ```django
     <a href="{% url 'read' i.id %}">
