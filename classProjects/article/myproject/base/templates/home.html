@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1 style="text-align: center; margin-top: 50px;">All Articles</h1>
+<div class="container">
+    {% for i in indian_data %}
+    <div class="article-container">
+        <h1>{{i.id}}</h1> 
+        <h3>{{i.title | upper}}</h3>
+        <p>{{i.desc | truncatewords:20}}</p>
+        <a href="{% url 'read' i.id %}">
+            <button>Read</button>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
