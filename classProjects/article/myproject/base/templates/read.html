@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="box">
+            <h1>{{primary_key.title}}</h1>
+            <p>{{primary_key.desc}}</p>
+            <a href="{% url 'homepage' %}">
+                <button>Go back</button>
+            </a>
+        </div>
+    </div>
+{% endblock %}
