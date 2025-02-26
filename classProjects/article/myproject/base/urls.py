@@ -6,5 +6,5 @@ urlpatterns = [
     path('events', views.events, name='events'),
     path('news', views.news, name='news'),
     path('about', views.about, name='about'),
-    path('read/<int:primary_key>', views.read, name='read'),
+    path('read/<int:recieved_button_ka_id>', views.read, name='read'),
 ]
