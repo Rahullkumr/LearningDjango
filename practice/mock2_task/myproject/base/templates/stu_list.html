@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+
+{% block content %}
+    <h1 style="text-align: center; margin-top: 50px;">Students list</h1>
+    {% for i in students %}
+        <div class="container">
+            <h1>{{i.roll}}</h1>
+            <h2>{{i.name}}</h2>
+            <a href="{% url 'details' i.roll %}"><button>details</button></a>
+        </div>
+
+    {% endfor %}
+{% endblock %}
