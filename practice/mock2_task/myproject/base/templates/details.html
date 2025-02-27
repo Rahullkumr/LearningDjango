@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+{% block content %}
+<div class="body">
+
+    <div class="container">
+        <h1>{{stu_details.roll}}</h1> <hr>
+        <h1>Name: {{stu_details.name}}</h1>
+        <h1>email: {{stu_details.email}}</h1>
+        <h1>subject: {{stu_details.subject}}</h1>
+        <h1>city: {{stu_details.city}}</h1>
+        <a href="{% url 'stu_list' %}">
+            <button>Go back</button>
+        </a>
+    </div>
+ 
+</div>
+{% endblock %}
