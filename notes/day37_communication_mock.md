@@ -2,4 +2,4 @@
 
 > mock 2: communication mock 
 
-- I was absent
+- I was absent due to travelling.
