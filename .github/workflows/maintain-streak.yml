@@ -1,0 +1,46 @@
+name: Maintain GitHub Streak
+
+on:
+  schedule:
+    # Runs at 9 PM IST every day
+    # IST is UTC+5:30, so 9 PM IST = 15:30 UTC
+    - cron: '30 15 * * *'
+  workflow_dispatch: # Allows manual triggering if needed
+
+jobs:
+  update-streak:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Update streak.md with current date
+        run: |
+          # Get current date in YYYY-MM-DD format
+          CURRENT_DATE=$(date -u +"%Y-%m-%d")
+          
+          # Check if streak.md exists, create if it doesn't
+          if [ ! -f "streak.md" ]; then
+            echo "# Maintaining Streak" > streak.md
+            echo "" >> streak.md
+            echo "> This file is just for maintaining streak if I don't get access to internet." >> streak.md
+            echo "" >> streak.md
+            echo "1. $CURRENT_DATE" >> streak.md
+          else
+            # Get the last number used and increment it
+            LAST_NUM=$(grep -o "^[0-9]\+" streak.md | tail -1)
+            NEXT_NUM=$((LAST_NUM + 1))
+            # Append new date to the list
+            echo "$NEXT_NUM. $CURRENT_DATE" >> streak.md
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git add streak.md
+          git commit -m "Update streak for $(date -u +'%Y-%m-%d')" || echo "No changes to commit"
+          git push
