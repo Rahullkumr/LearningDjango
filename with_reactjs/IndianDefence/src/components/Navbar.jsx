@@ -4,7 +4,9 @@ let Navbar = () => {
   return (
     <>
       <nav>
-        <div className="logo">Logo here</div>
+        <div className="logo">
+          <a href="">Indian Defence</a>
+        </div>
         <div className="links">
           <a href="">Air</a>
           <a href="">Water</a>
