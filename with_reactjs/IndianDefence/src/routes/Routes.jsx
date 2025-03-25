@@ -4,8 +4,8 @@ const Routes = () => {
   return (
     <div>
       - Create routes here
+        - nested routing using children concept
         - learn about protected routes also
-        - nested routing also
     </div>
   )
 }
