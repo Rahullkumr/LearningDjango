@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <center>
+        <h1>CREATE FORM</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <input type="text" name="title" placeholder="enter title" required> <br><br>
+            <input type="text" name="desc" placeholder="enter description" required> <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+{% endblock  %}
