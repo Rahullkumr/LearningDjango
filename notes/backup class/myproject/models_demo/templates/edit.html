@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<center>
+    <h2>Edit Article</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="title" value="{{ editing.title }}" placeholder='enter title' required><br><br>
+        <textarea placeholder='enter desc' name="desc" required>{{ editing.desc }}</textarea><br><br>
+        <input type="submit" value='update'>
+    </form>
+</center>
+{% endblock  %}
