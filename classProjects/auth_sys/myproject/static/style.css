@@ -30,3 +30,20 @@ nav{
 body{
     background-color: rgb(29, 60, 60);
 }
+form{
+    /* border: 2px solid red; */
+    padding: 50px;
+    width: 30%;
+    h1{
+        color: rgb(238, 254, 18);
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+    }
+    button{
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}

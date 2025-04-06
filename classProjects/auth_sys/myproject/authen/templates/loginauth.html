@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <center>
+        {% if wc %}
+            <p>
+                Wrong Credentials. Please try again or Register!
+                <a href="{% url 'registerpage' %}">Here</a>
+            </p>
+        {% endif %}
+
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            <h1>Login Here</h1><br><br>
+            <input type="text" name='username' placeholder="Enter username" required> <br><br>
+            <input type="password" name='password' placeholder="Enter password" required> <br><br>
+            <button type="submit">Login</button>
+        </form>
+        
+        <h2>user = {{request.user}}</h2>
+        <h2>{{request.user.is_authenticated}}</h2>
+    </center>
+
+{% endblock content %}

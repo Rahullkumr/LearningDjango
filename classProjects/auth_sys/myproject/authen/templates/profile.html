@@ -1,0 +1,24 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <center>
+        <h1>This is your profile</h1>
+        <div class="details" style="color: white;padding: 20px;">
+            <h1>First name: {{request.user.first_name}}</h1>
+            <h1>Last name: {{request.user.last_name}}</h1>
+            <h1>Email: {{request.user.email}}</h1>
+            <h1>Username:  {{request.user.username}}</h1>
+            
+            <h1>User: {{request.user}}</h1>
+            <h1>Authenticated: {{request.user.is_authenticated}}</h1>
+
+            <a href="">Update Profile</a>
+            <a href="{% url 'changepass' %}">Change Password</a>
+        </div>
+    </center>
+
+
+
+
+{% endblock %}
