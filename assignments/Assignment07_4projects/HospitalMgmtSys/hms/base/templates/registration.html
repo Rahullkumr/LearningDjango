@@ -1,0 +1,46 @@
+{% extends "index.html" %}
+
+{% block content %}
+<center>
+    <form action="" method="POST">
+      {% csrf_token %}
+
+        <h1> Patient Registration Form</h1> <br> 
+        
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="tel" name="phone_number" placeholder="Phone Number" required>
+        <input type="text" name="address" placeholder="Address" required>
+        <input type="number" name="age" placeholder="Age" min="0" required>
+    
+        <select name="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+    
+        <input type="text" name="state" placeholder="State" required>
+        <input type="text" name="aadhaar" placeholder="Aadhaar Number" pattern="\d{12}" required>
+        <input type="email" name="email" placeholder="Email ID" required>
+    
+        <textarea name="health_problem" rows="4" placeholder="Describe Health Problem" required></textarea>
+    
+        <input type="date" name="date_of_visit" value="" id="visit-date" readonly required>
+    
+        <button type="submit">Register Patient</button>
+      </form>
+    
+      <script>
+        // Auto-fill today's date
+        document.getElementById('visit-date').value = new Date().toISOString().split('T')[0];
+      </script>
+    </center>
+    
+
+
+
+
+
+
+
+{% endblock content %}
