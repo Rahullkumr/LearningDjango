@@ -1,0 +1,23 @@
+{% extends 'air_main.html' %}
+
+{% block content %}
+    <h1 class='category'>Fighter Jets</h1>
+
+    <div class="container">
+        {% for i in fighter_jets %}
+            <div class="card">
+                <h2 class="centerme">{{i.name}}</h2> <hr>
+                <h3>Origin: {{i.origin}}</h3>
+                <h3>Role: {{i.role}}</h3>
+                <h3>Speed: {{i.speed}}</h3>
+                <h3>Range: {{i.range}}</h3>
+                <h3>Weapons: </h3> 
+                {% for weapon in i.weapons %}
+                    <li>{{weapon}}</li>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
+
+{% endblock content %}
