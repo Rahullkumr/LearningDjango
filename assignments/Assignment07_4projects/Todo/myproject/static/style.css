@@ -30,7 +30,7 @@ nav{
     }
 }
 
-.addtask, .alltasks{
+.addtask, .alltasks, .loginform, .registerform{
     height: 80vh;
     /* border: 1px solid green; */
     display: flex;

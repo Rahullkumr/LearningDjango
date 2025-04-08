@@ -36,17 +36,5 @@ def delete(request, pk):
     return render(request, 'alltasks.html')
 
 
-def home(request):
-    return render(request, 'home.html')
-
-
-def register(request):
-    return render(request, 'register.html')
-
-
-def loginpage(request):
-    return render(request, 'loginpage.html')
-
-
-def logout(request):
-    return render(request, 'logout.html')
+# def home(request):
+#     return render(request, 'home.html')
