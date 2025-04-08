@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="alltasks">
+    <h1 style="color: rgb(16, 188, 162);">All Tasks</h1> <br><br>
+    {% if all_tasks %}
+        {% for i in all_tasks %}
+            <div id="onetask">
+                <div>{{i.id}}</div>
+                <div style="width: 55%;">{{i.task_todo}}</div>
+                <div>
+                    <a href="{% url 'edit' i.id %}">
+                        <button>Edit</button>
+                    </a>
+                </div>
+                <div>
+                    <a href="{% url 'delete' i.id %}">
+                        <button style="background-color: rgb(146, 16, 16);;">Delete</button>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h1> No data found </h1>
+    {% endif %}
+</div>
+{% endblock %}

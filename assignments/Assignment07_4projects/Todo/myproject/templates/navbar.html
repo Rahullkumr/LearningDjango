@@ -1,0 +1,15 @@
+<nav>
+    <div class="logo">
+        Task Manager
+    </div>
+    <div class="links">
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'alltasks' %}">All tasks</a>
+            <a href="{% url 'addtask' %}">Add task</a>
+            <a href="{% url 'logoutme' %}">Logout</a>
+        {% else %}
+            <a href="{% url 'register' %}">Register</a>
+            <a href="{% url 'loginpage' %}">Login</a>
+        {% endif %}
+    </div>
+</nav>

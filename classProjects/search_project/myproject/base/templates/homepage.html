@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+
+{% block content %}
+<center> 
+    <h4>Homepage</h4>
+
+    <a href="{% url 'homepage' %}">All Fruits</a><hr>
+
+
+    <h2>Search Form</h2>
+    <form action="">
+        <input type="text" name="q" placeholder="Search something"> 
+        <button type="submit">Search</button>
+    </form><hr>
+
+
+    <h1>list of fruits</h1>
+    {% for i in all_fruits %}
+        <h2>{{i.name}} // {{i.desc}}</h2>
+    {% endfor %}
+
+</center>
+    
+
+{% endblock content %}
