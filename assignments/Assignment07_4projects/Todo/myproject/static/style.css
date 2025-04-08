@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(52, 51, 51);
+}
+nav{
+    padding: 30px;
+    height: 100px;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        color: white;
+        font-size: 40px;
+    }
+    .links{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+    }
+}
+
+.addtask, .alltasks{
+    height: 80vh;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 50%;
+    /* border: 1px solid red; */
+    input{
+        padding: 20px;
+        font-size: 20px;
+        width: 80%;
+        border-radius: 50px;
+    }
+    button{
+        font-size: 20px;
+        width: 18%;
+    }
+    button:hover{
+        background-color: rgb(5, 98, 98);
+    }
+}
+button{
+    padding: 20px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+#onetask{
+    margin: 5px;
+    font-size: 1.2rem;
+    background-color: white;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    button{
+        width: 100px;
+        margin: 5px;
+        padding: 15px;
+    }
+}

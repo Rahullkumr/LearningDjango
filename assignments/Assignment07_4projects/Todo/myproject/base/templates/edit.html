@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="addtask">
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="task_fromui" value="{{ data.task_todo }}" required>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+{% endblock %}
