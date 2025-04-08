@@ -43,5 +43,6 @@ def register(request):
     return render(request, 'register.html')
 
 
-def logout(request):
-    return render(request, 'logout.html')
+def logoutme(request):
+    logout(request)  # it will erase session values
+    return redirect('loginpage')

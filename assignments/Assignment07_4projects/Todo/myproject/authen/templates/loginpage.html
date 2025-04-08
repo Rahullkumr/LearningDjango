@@ -10,14 +10,14 @@
                 <h1 style="color: rgb(16, 188, 162);">Login Here</h1> <br><br>
                 <input type="text" name='username' placeholder="Enter username" required> <br><br>
                 <input type="password" name='password' placeholder="Enter password" required> <br><br>
+                {% if wc %}
+                    <p style="color: red;margin-bottom:10px;">
+                        Wrong Credentials. Please try again or Register!
+                        <a href="{% url 'register' %}" style='color:white;'>Here</a>
+                    </p>
+                {% endif %}
                 <button type="submit">Login</button>
             </form>
-            {% if wc %}
-                <p style="color: red;">
-                    Wrong Credentials. Please try again or Register!
-                    <a href="{% url 'register' %}">Here</a>
-                </p>
-            {% endif %}
         </div>
     </center>
 

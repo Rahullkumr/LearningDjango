@@ -34,7 +34,3 @@ def delete(request, pk):
         task_to_be_deleted.delete()
         return redirect('alltasks')
     return render(request, 'alltasks.html')
-
-
-# def home(request):
-#     return render(request, 'home.html')
