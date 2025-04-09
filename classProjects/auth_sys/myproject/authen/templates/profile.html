@@ -2,21 +2,25 @@
 
 {% block content %}
 
-    <center>
-        <h1>This is your profile</h1>
-        <div class="details" style="color: white;padding: 20px;">
-            <h1>First name: {{request.user.first_name}}</h1>
-            <h1>Last name: {{request.user.last_name}}</h1>
-            <h1>Email: {{request.user.email}}</h1>
-            <h1>Username:  {{request.user.username}}</h1>
-            
-            <h1>User: {{request.user}}</h1>
-            <h1>Authenticated: {{request.user.is_authenticated}}</h1>
+    <div class="centerme">
+        <h1 style='color: rgb(25, 185, 19);'>This is your profile</h1> <br><br>
+        <div class="details" style="color: white;">
+            <h2>First name: {{request.user.first_name}}</h2>
+            <h2>Last name: {{request.user.last_name}}</h2>
+            <h2>Email: {{request.user.email}}</h2>
+            <h2>Username:  {{request.user.username}}</h2>
+    
+            <h2>User: {{request.user}}</h2>
+            <h2>Authenticated: {{request.user.is_authenticated}}</h2> <br>
 
-            <a href="">Update Profile</a>
-            <a href="{% url 'changepass' %}">Change Password</a>
+            <a href="{% url 'updateprofile' request.user.id %}">
+                <button>Update Profile</button>
+            </a>
+            <a href="{% url 'changepass' %}">
+                <button>Change Password</button>
+            </a>
         </div>
-    </center>
+    </div>
 
 
 

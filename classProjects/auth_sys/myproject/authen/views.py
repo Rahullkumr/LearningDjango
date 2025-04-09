@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
+@login_required(login_url='loginpage')
 def logoutpage(request):
     logout(request)  # it will erase session values
     return redirect('loginauth')
@@ -72,6 +73,7 @@ def profile(request):
     return render(request, 'profile.html')
 
 
+@login_required(login_url='loginpage')
 def changepass(request):
 
     if request.method == 'POST':
@@ -82,3 +84,23 @@ def changepass(request):
         return redirect('loginauth')
 
     return render(request, 'changepass.html')
+
+
+@login_required(login_url='loginpage')
+def updateprofile(request, pk):
+    u = get_object_or_404(User, id=pk)
+    if request.method == 'POST':
+        firstname = request.POST['firstname']
+        lastname = request.POST['lastname']
+        email = request.POST['email']
+        username = request.POST['username']
+
+        # overriding the db values
+        u.first_name = firstname
+        u.last_name = lastname
+        u.email = email
+        u.username = username
+        u.save()
+        return redirect('profile')
+
+    return render(request, 'updateprofile.html', {'user': u})

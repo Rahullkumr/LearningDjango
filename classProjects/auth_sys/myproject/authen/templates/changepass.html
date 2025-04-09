@@ -1,18 +1,14 @@
 {% extends "main.html" %}
 {% block content %}
 
-<div class="login-container">
-    <h2>update password</h2>
+<div class="centerme">
+    <h1 style='color: rgb(25, 185, 19);'>Change Password</h1>
 
-    <form method="POST" >
+    <form method="POST" style="text-align: center;">
         {% csrf_token %}
 
-        {% comment %} 
-            TODO: apne hisaab se kro jo sir ne bola hai
-        {% endcomment %}
-        <label > type new Password:</label>
-        <input type="password" name="password" required>
-        <button type="submit">update password</button>
+        <input type="text" name="password" placeholder="Enter new Password" required> <br><br>
+        <button type="submit" >Submit</button>
     </form>
 
 </div>

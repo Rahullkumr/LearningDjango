@@ -3,19 +3,18 @@
 {% block content %}
 
     <center>
-        {% if wc %}
-            <p>
-                Wrong Credentials. Please try again or Register!
-                <a href="{% url 'registerpage' %}">Here</a>
-            </p>
-        {% endif %}
-
         <form action="" method="POST">
             {% csrf_token %}
 
             <h1>Login Here</h1><br><br>
             <input type="text" name='username' placeholder="Enter username" required> <br><br>
             <input type="password" name='password' placeholder="Enter password" required> <br><br>
+            {% if wc %}
+            <p style='margin: 10px; color: red;'>
+                Wrong Credentials. Please try again or Register!
+                <a href="{% url 'registerpage' %}" style="color: white;">Here</a>
+            </p>
+            {% endif %}
             <button type="submit">Login</button>
         </form>
         
