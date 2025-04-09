@@ -35,7 +35,7 @@ form{
     padding: 50px;
     width: 30%;
     h1{
-        color: rgb(238, 254, 18);
+        color: rgb(25, 185, 19);
     }
     input{
         width: 100%;
@@ -45,5 +45,18 @@ form{
         width: 80%;
         padding: 10px;
         font-size: 16px;
+    }
+}
+
+.centerme{
+    /* border: 1px solid red; */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    button{
+        padding: 10px;
+        margin-top: 15px;
     }
 }
