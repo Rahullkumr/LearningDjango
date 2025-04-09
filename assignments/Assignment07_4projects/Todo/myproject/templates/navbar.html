@@ -6,6 +6,8 @@
         {% if request.user.is_authenticated %}
             <a href="{% url 'alltasks' %}">All tasks</a>
             <a href="{% url 'addtask' %}">Add task</a>
+            <a href="{% url 'searchtask' %}">Search task</a>
+            <a href="{% url 'profile' %}">Profile</a>
             <a href="{% url 'logoutme' %}">Logout</a>
         {% else %}
             <a href="{% url 'register' %}">Register</a>
