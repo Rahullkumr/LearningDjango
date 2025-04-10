@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="addtask" style='justify-content: start;margin-top: 60px'>
+        <form action="">
+            {% csrf_token %}
+            
+            <input type="text" name="q" placeholder="Type to search tasks">
+            <button type="submit">Search</button>
+        </form>
+        <div style='margin-top: 50px;width: 680px;'>
+                {% if all_tasks %}
+                    {% for i in all_tasks %}
+                        <div id="onetask" style='width: 98%; margin: 8px; padding: 5px;'>
+                            <div style="width: 100%;text-align: center;">{{i.task_todo}}</div>
+                            <div>
+                                <a href="{% url 'edit' i.id %}">
+                                    <button>Edit</button>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="{% url 'delete' i.id %}">
+                                    <button style="background-color: rgb(146, 16, 16);;">Delete</button>
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+        </div>
+    </div>
+{% endblock %}

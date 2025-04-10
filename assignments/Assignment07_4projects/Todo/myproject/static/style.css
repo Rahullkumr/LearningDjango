@@ -30,7 +30,7 @@ nav{
     }
 }
 
-.addtask, .alltasks, .loginform, .registerform{
+.addtask, .alltasks, .loginform, .registerform,.container{
     height: 80vh;
     /* border: 1px solid green; */
     display: flex;
@@ -75,4 +75,28 @@ button{
         margin: 5px;
         padding: 15px;
     }
+}
+
+.div1{
+    /* for profile pic */
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    background-color: rgb(87, 78, 78);
+}
+.profile-element{
+    border: 1px solid rgb(35, 98, 114);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 15px;
+    color: white;
+    /* grid-gap: 10px; */
 }

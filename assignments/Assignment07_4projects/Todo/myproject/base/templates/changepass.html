@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block content %}
+
+<div class="addtask">
+    <h1 style='color: teal;margin-bottom: 50px'>Change Password</h1>
+
+    <form method="POST" style="text-align: center;">
+        {% csrf_token %}
+
+        <input type="text" name="password" placeholder="Enter new Password" required> <br><br>
+        <button type="submit" >Submit</button>
+    </form>
+
+</div>
+
+{% endblock  %}

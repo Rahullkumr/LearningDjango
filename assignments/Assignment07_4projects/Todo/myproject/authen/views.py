@@ -18,6 +18,7 @@ def loginpage(request):
         else:
             wc = True
             return render(request, 'loginpage.html', {'wc': wc})
+
     return render(request, 'loginpage.html')
 
 
