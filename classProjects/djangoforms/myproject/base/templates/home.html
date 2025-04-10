@@ -1,0 +1,80 @@
+{% extends "main.html" %}
+
+{% block content %}
+<!-- 
+<center>
+
+    <h1> Html Form</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        <input type="text" placeholder="Student name"><br><br>
+        <input type="text" placeholder="Rollno"><br><br>
+        <input type="text" placeholder="Course"><br><br>
+        <input type="submit" value="Submit">
+    </form> <hr> 
+
+
+
+<h1>4 ways to render Django Forms</h1> <br>
+
+        <p>1. default way</p> <br>
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            {{formkey}}
+            <input type="submit" name="" id="">
+        </form><hr><br>
+
+
+
+    <p>2. using .as_p (all fields will be considered as paragraph)</p> <br>
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            {{formkey.as_p}}
+            <input type="submit" name="" id="">
+        </form><hr><br>
+
+
+
+    <p>3. using for loop</p><br>
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            {% for field in formkey %}
+                <label for="">{{field.label}}</label> {{field}} <br>
+            {% endfor %}
+            <input type="submit" name="" id="">
+        </form><hr><br>
+
+
+
+    <p>4. Manually rendering the form</p> <br>
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            <label for="">{{formkey.sname.label}}</label> {{formkey.sname}} <br>
+            <label for="">{{formkey.srollno.label}}</label> {{formkey.srollno}} <br>
+            <label for="">{{formkey.course.label}}</label> {{formkey.course}} <br>
+            <input type="submit" name="" id="">
+        </form><hr>
+
+</center> 
+-->
+
+<!-- ===================================================================================================== -->
+
+
+<center>
+    <p>1. default way</p> <br>
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {{formkey}}
+        <br>
+        <input type="submit" name="" id="">
+    </form>
+</center>
+
+{% endblock content %}
