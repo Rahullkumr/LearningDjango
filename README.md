@@ -51,3 +51,7 @@ urlpatterns = [
 ```python
 python manage.py runserver
 ```
+
+## Todo: Faker data
+
+## Todo: connecting MYSQL db
