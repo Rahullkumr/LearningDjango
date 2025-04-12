@@ -67,14 +67,20 @@
 
 
 <center>
-    <p>1. default way</p> <br>
+    <p>1. Default way</p> <br>
     <form action="" method="POST">
         {% csrf_token %}
 
-        {{formkey}}
-        <br>
+        {{formkey}} <br>
         <input type="submit" name="" id="">
-    </form>
+    </form> <br><hr><br>
+
+    <h2>All records</h2> <br><br>
+    {% for i in data %}
+        <h3>{{i.sname}} ➡️ {{i.srollno}} ➡️ {{i.course}} </h3>
+        <a href="{% url 'edit' i.id %}">Edit</a> 
+        <a href="{% url 'deletepage' i.id  %}">Delete</a>    <br><br>
+    {% endfor %}
 </center>
 
 {% endblock content %}
