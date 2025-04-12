@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<center>
+    <h2> Update form</h2>
+
+    <p>1. Default way</p> <br>
+
+    
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" name="" id="">
+    </form>
+
+    <hr>
+
+</center>
+
+
+{% endblock content %}
