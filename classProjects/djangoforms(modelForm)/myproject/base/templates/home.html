@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <center>
+        <h2>Django Form using ModelForm</h2>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            {% for i in form %}
+                <label for="">{{i.label}}</label> 
+                <br> {{i}} <br>
+            {% endfor %}    <br>
+            <button type="submit" >Submit</button>
+        </form>
+        
+        <!-- Read operation -->
+        <h1>Read operation</h1>
+        {% for i in data %}
+            <h2>{{i.name}} - {{i.rollno}} - {{i.course}}</h2> 
+            <a href="{% url 'edit' i.id %}">Edit</a>
+            <a href="{% url 'deletepage' i.id %}">delete</a>
+        {% endfor %}    
+    </center>
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <center>
+        <h2>Update form using ModelForm</h2>
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            {% comment %} {{form.as_p}} {% endcomment %}
+            {% for i in form %}
+                <label for=''>{{i.label}}</label>
+                <br>{{i}}<br>
+            {% endfor %}
+            <input type="submit" value='Submit'>
+        </form><hr><br>
+    </center>
+{% endblock content %}
