@@ -1,0 +1,39 @@
+{% extends "main.html" %}
+
+{% block content %}
+<center>
+<div class="container mt-5">
+    <h2>Student Registration </h2><br>
+    <form method="POST" class="mt-4">
+        {% csrf_token %}
+
+        <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="rollno">Roll Number</label>
+            <input type="text" id="rollno" name="rollno" required>
+        </div>
+        <div>
+            <label for="course">Course</label>
+            <input type="text" id="course" name="course" required>
+        </div><br>
+        <button type="submit">Register</button>
+    </form><br>
+</div><hr>
+<div>
+    <h1>Read operation</h1> <br>
+    {% if all_data %}
+        {% for i in all_data %}
+           <h2> {{ i.name }} - {{ i.rollno }} - {{ i.course }} 
+            <a href="{% url 'student' i.id %}">Edit</a>
+            <a href="{% url 'deleteme' i.id %}">Delete</a>
+           </h2><br>
+        {% endfor %}
+    {% else %}
+        <h3>No data found</h3>
+    {% endif %}
+</div>
+<center>
+{% endblock content %}

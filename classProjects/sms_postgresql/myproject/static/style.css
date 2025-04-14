@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(86, 101, 101);
+}
+nav{
+    height: 100px;
+    margin-bottom: 50px;
+    .logo{
+        background-color: rgb(3, 77, 65);
+        color: white;
+        font-size: 3rem;
+        padding: 20px;
+        text-align: center;
+    }
+}
+button{
+    padding: 5px;
+}
+span{
+    color: rgb(181, 77, 77);
+}
