@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="addtask" style='justify-content: start;margin-top: 60px'>
+        <form action="">
+            {% csrf_token %}
+            
+            <input type="text" name="q" placeholder="Type to search articles">
+            <button type="submit">Search</button>
+        </form>
+
+        
+        <div style='margin-top: 50px;width: 680px;'>
+                {% if all_articles %}
+                    {% for i in all_articles %}
+                        <div id="one" style='width: 98%; margin: 8px; padding: 5px;'>
+                            <div style="width: 100%;text-align: center;">{{i.title}}</div>
+                            <div>
+                                <a href="{% url 'read' i.id %}">
+                                    <button>Read</button>
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+        </div>
+    </div>
+{% endblock %}
