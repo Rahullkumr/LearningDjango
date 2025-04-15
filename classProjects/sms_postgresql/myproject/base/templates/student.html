@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+
+{% block content %}
+<center>
+<div>
+    <h2>Update Student Details</h2><br><br>
+    <form method="POST">
+        {% csrf_token %}
+
+        <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" value='{{student.name}}' required>
+        </div>
+        <div>
+            <label for="rollno">Roll Number</label>
+            <input type="text" id="rollno" name="rollno" value='{{student.rollno}}' required>
+        </div>
+        <div>
+            <label for="course">Course</label>
+            <input type="text" id="course" name="course" value='{{student.course}}' required>
+        </div><br>
+        <button type="submit">Update</button>
+    </form>
+</div>
+<center>
+{% endblock content %}
