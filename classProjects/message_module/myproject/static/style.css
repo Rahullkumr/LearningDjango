@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(47, 72, 72);
+    .logo{
+        font-size: 50px;
+        color: rgb(12, 198, 198);
+        font-family: cursive;
+    }
+    .links{
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        a{
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+        }
+    }
+}
+
+.centerme{
+    /* for about page */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styling for Authen app */
+
+.addtask, .alltasks, .loginform, .registerform,.container{
+    height: 80vh;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 50%;
+    /* border: 1px solid red; */
+    input{
+        padding: 20px;
+        font-size: 20px;
+        width: 80%;
+        border-radius: 50px;
+    }
+    button{
+        font-size: 20px;
+        width: 18%;
+    }
+    button:hover{
+        background-color: rgb(5, 98, 98);
+    }
+}
+button{
+    padding: 20px;
+    background-color: rgb(12, 104, 104);
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+#one{
+    /* for each searched element */
+    margin: 5px;
+    font-size: 1.2rem;
+    border: 1px solid rgb(12, 104, 104);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    button{
+        width: 100px;
+        margin: 5px;
+        padding: 15px;
+    }
+}
+#one:hover{
+    background-color: rgba(55, 96, 96, 0.082);
+}
+
+.div1{
+    /* for profile pic */
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* border: 3px solid rgb(12, 104, 104); */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    background-color: rgb(12, 104, 104);
+}
+.profile-element{
+    border: 1px solid rgb(35, 98, 114);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 15px;
+}
+

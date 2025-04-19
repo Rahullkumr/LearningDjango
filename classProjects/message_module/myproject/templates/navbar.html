@@ -1,0 +1,13 @@
+<nav>
+    <div class="logo">messages Module</div>
+    <div class="links">
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'profile' %}">Profile</a>
+            <a href="{% url 'logoutme' %}">Logout</a>
+        {% else %}
+            <a href="{% url 'loginpage' %}">Login</a>
+            <a href="{% url 'register' %}">Register</a>
+        {% endif %}
+        <a href="{% url 'about' %}">About</a>
+    </div>
+</nav>

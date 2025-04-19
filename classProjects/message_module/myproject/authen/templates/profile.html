@@ -1,0 +1,46 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="addtask">
+        <div class="container">
+            <h1 style="color: green;margin-bottom:10px;">
+                {% for i in messages %}
+                    {{i}}
+                {% endfor %} 
+            </h1>
+            <div class="div1">
+                <div>😎</div>
+            </div>
+            <div class="div2">
+                <div class='profile-element'>
+                    <div>First Name</div>
+                    <div>{{request.user.first_name}}</div>
+                </div>
+                <div class='profile-element'>
+                    <div>Last Name</div>
+                    <div>{{request.user.last_name}}</div>
+                </div>
+                <div class='profile-element'>
+                    <div>Email</div>
+                    <div>{{request.user.email}}</div>
+                </div>
+                <div class='profile-element'>
+                    <div>User Name</div>
+                    <div>{{request.user.username}}</div>
+                </div>
+                <div class='profile-element'>
+                    <div>
+                        <a href="{% url 'updateprofile' request.user.id %}">
+                            <button>Update profile</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="{% url 'changepass' %}">
+                            <button>Change Password</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

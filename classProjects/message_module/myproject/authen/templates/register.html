@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <center>
+        <div class="registerform">            
+            <form action="" method="POST">
+                {% csrf_token %}
+                
+                <h1>Registration Form</h1> <br><br>
+                <input type="text" name="firstname" placeholder="first name" required><br><br>
+                <input type="text" name="lastname" placeholder="last name" required><br><br>
+                <input type="text" name="email" placeholder="email" required><br><br>
+                <input type="text" name="username" placeholder="username" required><br><br>
+                <input type="text" name="password" placeholder="password" required><br><br>
+
+
+                <p style="color: red;margin-bottom:10px;">
+                    {% for i in messages %}
+                        {{i}}
+                    {% endfor %} 
+                </p>
+
+                
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </center>
+
+{% endblock %}
