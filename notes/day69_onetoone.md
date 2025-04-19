@@ -2,4 +2,4 @@
 
 > django relationship model
 
-- one to Many relation
+- one to one relation
