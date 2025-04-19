@@ -5,12 +5,12 @@
 }
 
 nav{
-    height: 50px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: rgb(28, 23, 23);
+    background-color: rgb(29, 47, 22);
     .logo{
         font-size: 40px;
         a{
@@ -60,3 +60,13 @@ nav{
   button:hover {
     background-color: #218838;
   }
+
+  
+.centerme{
+  /* for about page */
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
