@@ -13,3 +13,5 @@
     - loads()
     - dumps()
     - JsonResponse() instead of HttpResponse()/render()
+ 
+- add day 74 notes
