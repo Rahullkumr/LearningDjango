@@ -1,11 +1,11 @@
-{% extends "index.html" %}
+{% extends "main.html" %}
 
 {% block content %}
 <center>
     <form action="" method="POST">
       {% csrf_token %}
 
-        <h1> Patient Registration Form</h1> <br> 
+        <h1>Patient Registration Form</h1> <br> 
         
         <input type="text" name="full_name" placeholder="Full Name" required>
         <input type="tel" name="phone_number" placeholder="Phone Number" required>
