@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+
+{% block content%}
+    <div class="centerme">
+        <form action="" method="post">
+            {% csrf_token %}
+            <h1>Signup Form</h1> <br>
+            <input type="text" name="name" id="" placeholder="Enter your full name" required>
+            <input type="email" name="email" id="" placeholder="Enter your email" required>
+            <input type="text" name="username" id="" placeholder="Enter username" required>
+            <input type="password" name="password" id="" placeholder="Enter password" required>
+
+            {% comment %} success or warning message {% endcomment %} 
+            <p style="color: red;margin-bottom:10px;">
+                {% for i in messages %}
+                    {{i}}
+                {% endfor %}
+            </p>
+
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+{% endblock content%}

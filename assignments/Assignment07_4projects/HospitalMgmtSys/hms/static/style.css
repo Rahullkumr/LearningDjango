@@ -10,18 +10,15 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: rgb(29, 47, 22);
+    background-color: rgb(10, 53, 80);
     .logo{
         font-size: 40px;
-        a{
-            color: white;
-            text-decoration: none;
-        }
+        color: white;
     }
     .links{
         display: flex;
         justify-content: space-evenly;
-        width: 50%;
+        width: 60%;
         a{
             color: white;
             text-decoration: none;
@@ -50,7 +47,7 @@ nav{
   button {
     padding: 12px;
     width: 100%;
-    background-color: rgb(28, 23, 23);
+    background-color: rgb(12, 66, 99);
     color: white;
     border: none;
     border-radius: 8px;
