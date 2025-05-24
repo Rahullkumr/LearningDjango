@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="update-password-container">
+        <h2 class="update-password-title">Update Password</h2>
+
+  
+
+        <form action="" method="POST" class="update-password-form">
+            {% csrf_token %}
+            
+            <label for="new-password">New Password</label><br>
+            <input type="password" name="password" id="new-password" required><br><br>
+            
+            <label for="confirm-password">Confirm New Password</label><br>
+            <input type="password" name="confirm_password" id="confirm-password" required><br><br>
+            
+            <input type="submit" value="Update Password" class="submit-btn">
+        </form>
+    </div>
+{% endblock content %}
