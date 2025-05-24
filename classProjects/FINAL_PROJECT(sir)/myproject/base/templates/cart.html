@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="cart-container">
+        <h2 class="cart-title">Shopping Cart</h2>
+        
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in cartproducts %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ item.pname }}</td>
+                        <td>{{ item.pcategory }}</td>
+                        <td>₹{{ item.price }}</td>
+                        <td>{{ item.quantity }}</td>
+                        <td>₹{{ item.totalprice }}</td>
+                        <td><a href="{% url 'remove' item.id %}" class="remove-btn">Remove</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h3>Total Amount: ₹{{ TA }}</h3>
+            <a href="" class="checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+{% endblock content %}

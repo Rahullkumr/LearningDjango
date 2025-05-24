@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="login-container">
+        <h2 class="login-title">Login Here</h2>
+
+      
+
+        <form action="" method="POST" class="login-form">
+            {% csrf_token %}
+
+            <label for="username">Username</label><br>
+            <input type="text" name="username" id="username" required><br><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" required><br><br>
+
+            <input type="submit" value="Login" class="submit-btn">
+        </form>
+
+        <p>Don't have an account? <a href="{% url 'register' %}">Sign up</a></p>
+    </div>
+{% endblock content %}

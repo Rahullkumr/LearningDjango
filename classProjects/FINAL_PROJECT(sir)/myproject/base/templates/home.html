@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+
+{% block content %}
+  <div class="sub-navbar">
+    <div class="categories">
+        {% for i in category %}
+            <form action="">
+                <input type="submit" value="{{i}}" name="cat" class="category-btn">
+            </form>
+        {% endfor %}
+        <a href="{% url 'home' %}" class="all-products-btn">All Products</a>
+    </div>
+</div>
+
+
+    <div class="home">
+        {% for i in all_products %}
+            <div class="product-card">
+                {% if trend %}
+                    <div class="trend-badge">Trending Now!!</div>
+                {% endif %}
+                {% if offer %}
+                    <div class="offer-badge">Flat 50% Off</div>
+                {% endif %}
+                
+                <img src="{{i.pimages.url}}" alt="{{i.pname}}" class="product-image">
+                
+                <h2 class="product-name">{{i.pname}}</h2>
+                <p class="product-desc">{{i.pdesc}}</p>
+                <p class="product-price">{{i.price}}</p>
+
+                <div class="product-actions">
+                    <a href="{% url 'addtocart' i.id %}" class="add-to-cart-btn">Add to Cart</a>
+                    <a href="#" class="details-btn">Details</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
