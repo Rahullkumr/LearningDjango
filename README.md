@@ -9,7 +9,7 @@ Learning Django from Rajat Naroji sir
 
 
 ## MVT architecture (used by Django)
-![](./MVT.png)
+![](./MVTdiagram.png)
 
 ## Reload browser automatically
 
