@@ -2,7 +2,7 @@
 
 Learnt Django from [Rajat Naroji](https://www.linkedin.com/in/rajat-naroji-a7bb15297/) sir
 
-![](./Django%205.png)
+<!-- ![](./Django%205.png) -->
 
 ![](./MVTdiagram.png)
 
@@ -17,3 +17,14 @@ Learnt Django from [Rajat Naroji](https://www.linkedin.com/in/rajat-naroji-a7bb1
 
 > Projects that I built during this course
 
+| SN | Project Name | Topics Used |
+| :---: | :---: | :---: |
+| 1 | Project 1 | HTML, CSS, Python, Django |
+ 
+<br><br>
+
+## Following are the projects
+
+### 1. Project 1
+
+![]()
