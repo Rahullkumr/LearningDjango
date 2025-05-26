@@ -4,4 +4,4 @@
 
 - shortcut way of creating api
 
-    - ModelApi
+    - using ModelSerializer
