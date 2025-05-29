@@ -17,18 +17,18 @@ Learnt Django from [Rajat Naroji](https://www.linkedin.com/in/rajat-naroji-a7bb1
 
 | SN | Project Name | Tech / concepts implemented | Demo / Code |
 | :--------------: | :--------------: | :------------: | :-------------: |
-| 1 | **Indian Defence** 🌗❌ | Django, HTML, CSS, dtl tags, conditional rendering, context, global templates, template inheritance, redirect,dynamic routing, path converter, dictionary | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
-| 2 | **Travel Guide** | Django, SQLite3 | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
-| 3 | **HMS (receptionist page)** | Django, SQLite3 | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
-| 4 | **Student Mgmt Sys** | Django, PostgreSQL | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
-| 5 | **Auth System** | Django, SQLite3 | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
-| 6 | **Django Forms** | Django, SQLite3 | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
-| 7 | **Message module** | Django, SQLite3 | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
-| 8 | **Article** | Django, SQLite3, HTML, CSS, dtl tags, conditional rendering, context, global templates, template inheritance, redirect, dynamic routing, path converter, Models, ORM, CRUD, Authentication-Authorisation,login, logout, session storage, Admin panel, Inbuilt User model, Search | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
-| 9 | **Todo list** | Django, SQLite3, HTML, CSS, dtl tags, conditional rendering, context, global templates, template inheritance, redirect, dynamic routing, path converter, Models, ORM, CRUD, Authentication-Authorisation,login, logout, session storage, Inbuilt User model, Search | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
-| 10 | **Relationships** | Django, SQLite3 | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
-| 11 | **ShopSphere** | Django, SQLite3 | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
-| 12 | **Weather app** | Django, REST API | [🔗 GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 1 | **Indian Defence** 🌗❌ | Django, HTML, CSS, dtl tags, conditional rendering, context, global templates, template inheritance, redirect,dynamic routing, path converter, dictionary | [GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 2 | **Travel Guide** | Django, SQLite3 | [GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 3 | **HMS (receptionist page)** | Django, SQLite3 | [GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 4 | **Student Mgmt Sys** | Django, PostgreSQL | [GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 5 | **Auth System** | Django, SQLite3 | [GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 6 | **Django Forms** | Django, SQLite3 | [GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 7 | **Message module** | Django, SQLite3 | [GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 8 | **Article** | Django, SQLite3, HTML, CSS, dtl tags, conditional rendering, context, global templates, template inheritance, redirect, dynamic routing, path converter, Models, ORM, CRUD, Authentication-Authorisation,login, logout, session storage, Admin panel, Inbuilt User model, Search | [GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 9 | **Todo list** | Django, SQLite3, HTML, CSS, dtl tags, conditional rendering, context, global templates, template inheritance, redirect, dynamic routing, path converter, Models, ORM, CRUD, Authentication-Authorisation,login, logout, session storage, Inbuilt User model, Search | [GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 10 | **Relationships** | Django, SQLite3 | [GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 11 | **ShopSphere** | Django, SQLite3 | [GitHub](https://github.com/rahullkumr/baaaad_me) |
+| 12 | **Weather app** | Django, REST API | [GitHub](https://github.com/rahullkumr/baaaad_me) |
 
 
 ## Following are the Projects
