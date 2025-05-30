@@ -83,3 +83,34 @@ nav{
     font-size: 40px;
     /* text-decoration: underline; */
 }
+
+.air_missile-image{
+    height: 90vh;
+    background: url("https://i.ytimg.com/vi/mBtaG56zyMg/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1px;
+}
+.drone-image{
+    height: 100vh;
+    background: url("https://www.theweek.in/content/dam/week/magazine/theweek/cover/images/2022/4/22/46-A-model-of-the-Rustom-II-drone.jpg.transform/schema-16x9/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1px;
+}
+.fighter_jet-image{
+    height: 100vh;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/0/0b/Exercise_Garuda_IAF_Su-30_MKI%2C_French_Rafale%2C_IAF_Tejas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 1px;
+}
+.helicopter-image{
+    height: 100vh;
+    background: url("https://i.ytimg.com/vi/MJ4OY4ugIkw/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 1px;
+}

@@ -53,22 +53,6 @@ def fighter_jets(request):
             "range": "1,210 km",
             "weapons": ["R-73", "R-77", "S-24 Rockets"],
         },
-        {
-            "name": "HAL Prachand (LCH)",
-            "origin": "India",
-            "role": "Attack Helicopter",
-            "speed": "268 km/h",
-            "range": "550 km",
-            "weapons": ["Mistral ATAM", "Helina", "Rocket Pods"],
-        },
-        {
-            "name": "AH-64E Apache",
-            "origin": "USA",
-            "role": "Attack Helicopter",
-            "speed": "293 km/h",
-            "range": "476 km",
-            "weapons": ["Hellfire Missiles", "Hydra Rockets", "30mm Chain Gun"],
-        }
     ]
     context = {'fighter_jets': fj_data}
     return render(request, 'air_html/fighter_jets.html', context)
