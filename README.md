@@ -34,7 +34,7 @@ Learnt Django from [Rajat Naroji](https://www.linkedin.com/in/rajat-naroji-a7bb1
 ## Following are the Projects
 
 ### 1. Indian Defence
-![](./Task1_Calculator/calculator/calc.gif)
+![](https://github.com/Rahullkumr/LearningDjango/blob/main/assignments/Assignment05_dynamicRouting/ID.gif)
 <br>
 
 ### 2. Travel Guide
