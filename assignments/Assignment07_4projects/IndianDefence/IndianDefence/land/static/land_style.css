@@ -83,3 +83,36 @@ nav{
     font-size: 40px;
     /* text-decoration: underline; */
 }
+
+.ads-image{
+    height: 100vh;
+    background: url("https://bel-india.in/wp-content/uploads/2022/12/Akash-Missile-System.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1px;
+}
+
+.land_missile-image{
+    height: 90vh;
+    background: url("https://i.ytimg.com/vi/mBtaG56zyMg/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1px;
+}
+
+.radar-image{
+    height: 100vh;
+    background: url("https://www.asianmilitaryreview.com/wp-content/uploads/2017/02/Troop-Level-Radar-for-Akash-Missile-System-Army-version.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 1px;
+}
+
+.tank-image{
+    height: 90vh;
+    background: url("https://i.ytimg.com/vi/XdCXKENDR8s/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1px;
+}
