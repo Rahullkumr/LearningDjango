@@ -51,12 +51,22 @@ nav{
     }    
 }
 
+.category{
+    margin: 50px 0 20px 0;
+    text-align: center; 
+    font-family: monospace;
+    color: darkblue;
+
+    font-size: 40px;
+    /* text-decoration: underline; */
+}
+
 .container{
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px;    
 }
 
 .card{
@@ -67,19 +77,39 @@ nav{
     .centerme{
         text-align: center;
         color: rgb(22, 22, 217);
-
     }
     *{
         margin: 10px;
     }
+    background-color: rgba(255, 255, 255, .7);
 }
 
-.category{
-    margin: 50px 0 20px 0;
-    text-align: center; 
-    font-family: monospace;
-    color: darkblue;
-
-    font-size: 40px;
-    /* text-decoration: underline; */
+.submarine-image{
+    height: 100vh;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Trio_of_Kalvari_class_submairne_during_an_exercise.jpg/2560px-Trio_of_Kalvari_class_submairne_during_an_exercise.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1px;
+}
+.ac-image{
+    height: 100vh;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/INS_Vikrant_%28R11%29_and_INS_Vikramaditya_%28R33%29_during_exercise.jpg/2880px-INS_Vikrant_%28R11%29_and_INS_Vikramaditya_%28R33%29_during_exercise.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1px;
+}
+.destroyer-image{
+    height: 100vh;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/INS_Chennai_%28D65%29_at_sea.jpg/2560px-INS_Chennai_%28D65%29_at_sea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1px;
+}
+.frigate-image{
+    height: 100vh;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/1/15/INS_Trishul_%28F43%29_on_a_joiint_EEZ_patrol_with_Tanzanian_Navy_%28cropped%29.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 1px;
 }

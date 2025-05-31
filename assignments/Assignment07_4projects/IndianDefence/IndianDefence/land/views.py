@@ -235,15 +235,6 @@ def air_defence_sys(request):
             "missile_type": "Active Radar Homing, Solid-fueled"
         },
         {
-            "name": "MRSAM (Medium-Range Surface-to-Air Missile)",
-            "origin": "India/Israel",
-            "type": "Surface-to-Air Missile System",
-            "range": "70-100 km",
-            "altitude_range": "Up to 15,000 m",
-            "role": ["Air Defense", "Anti-Aircraft", "Missile Defense"],
-            "missile_type": "Active Radar Homing"
-        },
-        {
             "name": "Crotale NG",
             "origin": "France",
             "type": "Short-Range Surface-to-Air Missile System",
