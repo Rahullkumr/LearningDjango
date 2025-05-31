@@ -17,7 +17,7 @@ Learnt Django from [Rajat Naroji](https://www.linkedin.com/in/rajat-naroji-a7bb1
 
 | SN | Project Name | Tech / concepts implemented | Demo / Code |
 | :--------------: | :--------------: | :------------: | :-------------: |
-| 1 | **Indian Defence** | Django, HTML, CSS, dtl tags, context, template inheritance,dynamic routing, dictionary | [Code](https://github.com/Rahullkumr/LearningDjango/tree/main/assignments/Assignment05_dynamicRouting) / [Demo](#) |
+| 1 | **Indian Defence** | Django, HTML, CSS, dtl tags, context, template inheritance,dynamic routing, dictionary | [Code](https://github.com/Rahullkumr/LearningDjango/tree/main/assignments/Assignment07_4projects) / [Demo](#) |
 | 2 | **Travel Guide** | Django, SQLite3 | [GitHub](https://github.com/rahullkumr/baaaad_me) |
 | 3 | **HMS (receptionist page)** | Django, SQLite3 | [GitHub](https://github.com/rahullkumr/baaaad_me) |
 | 4 | **Student Mgmt Sys** | Django, PostgreSQL | [GitHub](https://github.com/rahullkumr/baaaad_me) |
@@ -34,7 +34,7 @@ Learnt Django from [Rajat Naroji](https://www.linkedin.com/in/rajat-naroji-a7bb1
 ## Following are the Projects
 
 ### 1. Indian Defence
-![](https://github.com/Rahullkumr/LearningDjango/blob/main/assignments/Assignment05_dynamicRouting/ID.gif)
+![](https://github.com/Rahullkumr/LearningDjango/blob/main/assignments/Assignment07_4projects/IndianDefence/ID.gif)
 <br>
 
 ### 2. Travel Guide
