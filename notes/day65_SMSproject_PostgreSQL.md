@@ -35,7 +35,8 @@
 - This is the adapter that allows Django to connect to PostgreSQL.
 
    ```bash
-   pip install psycopg2-binary
+   pip install psycopg2
+   pip install psycopg2-binary # for deployment
    ```
 
 
